@@ -15,7 +15,7 @@ This is a solution to the [Dictionary Web App challenge on Frontend Mentor](http
 
 ### The challenge
 
-Your users should be able to:
+Users should be able to:
 
 - Search for words using the input field
 - See the Free Dictionary API's response for the searched word
