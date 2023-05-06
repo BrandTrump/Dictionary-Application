@@ -1,3 +1,4 @@
+import Heading from "./components/Heading";
 import InputField from "./components/InputField";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -17,7 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col items-center mt-6">
+        <div className="m-6 font-serif md:max-w-4xl md:flex md:flex-col md:justify-center md:mx-auto">
+          <Heading />
           <InputField />
           {children}
         </div>
