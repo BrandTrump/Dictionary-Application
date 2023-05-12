@@ -38,7 +38,7 @@ async function DefinitionPage({ params: { word } }: Props) {
           <p className="text-slate-500 mb-4">Meaning</p>
           <ul
             role="list"
-            className="marker:text-fuchsia-600 list-disc pl-5 space-y-3"
+            className="marker:text-fuchsia-600 list-disc pl-10 space-y-3 "
           >
             {meaning.definitions.map((definition, index) => (
               <li key={index}>
@@ -49,33 +49,40 @@ async function DefinitionPage({ params: { word } }: Props) {
               </li>
             ))}
           </ul>
-          <p className="text-slate-500 mt-6">
-            {meaning.synonyms.length === 0 ? null : "Synonyms"}{" "}
-            <span className="text-fuchsia-600 font-bold">
-              {meaning.synonyms}
-            </span>
-          </p>
+
+          <div className="mt-6 inline-flex space-x-6">
+            <p className="text-slate-500">
+              {meaning.synonyms.length === 0 ? null : "Synonyms"}{" "}
+            </p>
+            <p className="text-fuchsia-600 font-bold">
+              {meaning.synonyms.join(", ")}
+            </p>
+          </div>
         </div>
       ))}
       <hr className="h-px bg-gray-200 border-0"></hr>
 
-      <div className="md:inline-flex space-x-4">
+      <div className="md:inline-flex md:space-x-4 max-w-10">
         <p className="text-slate-500">Source</p>
-        <div className="flex items-center space-x-2">
-          <Link href={data.sourceUrls[0]} className="underline">
+        <div className="flex items-center space-x-2 ">
+          <Link
+            as={data.sourceUrls[0]}
+            href={data.sourceUrls[0]}
+            className="underline truncate"
+          >
             {data.sourceUrls}
           </Link>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
             className="w-4 h-4 text-slate-500"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
             />
           </svg>
