@@ -24,7 +24,7 @@ function InputField() {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Search for any word or phrase"
-        className="bg-gray-200/50 border-0 border-gray-300 text-gray-900 font-bold text-md rounded-2xl p-2.5 focus:outline-none xl:w-96 flex-1 pl-8"
+        className="bg-gray-200/50 border-0 border-gray-300 text-gray-900 text-md rounded-2xl p-2.5 focus:outline-none xl:w-96 flex-1 pl-8 dark:placeholder:text-white dark:bg-gray-500/50 dark:text-white"
       />
       <button type="submit">
         <svg
