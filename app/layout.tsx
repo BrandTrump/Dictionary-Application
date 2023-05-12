@@ -1,6 +1,6 @@
 import Heading from "./components/Heading";
 import InputField from "./components/InputField";
-import Provider from "./components/Provider";
+// import Provider from "./components/Provider";
 import "./globals.css";
 
 export const metadata = {
