@@ -1,6 +1,6 @@
 import Heading from "./components/Heading";
 import InputField from "./components/InputField";
-// import Provider from "./components/Provider";
+import Provider from "./components/Provider";
 import "./globals.css";
 
 export const metadata = {
@@ -16,11 +16,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="m-6 font-serif md:max-w-4xl md:flex md:flex-col md:justify-center md:mx-auto">
-          <Heading />
-          <InputField />
-          {children}
-        </div>
+        <Provider>
+          <div className="m-6 font-serif md:max-w-4xl md:flex md:flex-col md:justify-center md:mx-auto">
+            <Heading />
+            <InputField />
+            {children}
+          </div>
+        </Provider>
       </body>
     </html>
   );
