@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DarkModeToggle from "./DarkModeToggle";
 
 function Heading() {
   return (
@@ -21,15 +22,26 @@ function Heading() {
       </Link>
 
       <div className="flex divide-x-2 items-center">
-        <div className="pr-4 font-bold text-sm">
+        <div className="pr-4 font-bold text-sm flex items-center space-x-4">
           <p>Serif</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="w-6 h-6 text-fuchsia-600"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
         </div>
 
-        <div className="flex items-center space-x-3 pl-2">
-          <label className="relative inline-flex items-center cursor-pointer">
-            <input type="checkbox" value="" className="sr-only peer" />
-            <div className="w-9 h-5 bg-gray-500 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-fuchsia-300 dark:peer-focus:ring-fuchsia-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-fuchsia-600"></div>
-          </label>
+        <div className="flex items-center space-x-3 pl-4">
+          <DarkModeToggle />
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +49,7 @@ function Heading() {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-7 h-7 text-gray-500 cursor-pointer"
+            className="w-7 h-7 text-gray-500 cursor-pointer dark:text-fuchsia-600"
           >
             <path
               strokeLinecap="round"
