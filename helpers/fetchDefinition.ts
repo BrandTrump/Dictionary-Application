@@ -3,9 +3,7 @@ async function fetchDefinition(word: string) {
     `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
   );
 
-  if (!res.ok) {
-    throw new Error("Failed to fetch data");
-  }
+  if (!res.ok) return undefined;
 
   const data = await res.json();
   const searchedWord: Word = data[0];
