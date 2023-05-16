@@ -1,5 +1,6 @@
 import fetchDefinition from "@/helpers/fetchDefinition";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 type Props = {
   params: {
@@ -9,6 +10,10 @@ type Props = {
 
 async function DefinitionPage({ params: { word } }: Props) {
   const data = await fetchDefinition(word);
+
+  if (!data) {
+    notFound();
+  }
 
   return (
     <div className="space-y-5">
