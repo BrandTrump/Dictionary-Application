@@ -83,7 +83,7 @@ async function DefinitionPage({ params: { word } }: Props) {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-4 h-4 text-slate-500"
+            className="w-4 h-4 min-w-4 text-slate-500"
           >
             <path
               strokeLinecap="round"
