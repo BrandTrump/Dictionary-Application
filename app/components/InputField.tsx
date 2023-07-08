@@ -1,10 +1,12 @@
 "use client";
+import { useFontStore } from "@/store/FontStore";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 
 function InputField() {
   const [input, setInput] = useState("");
   const router = useRouter();
+  const font = useFontStore((state) => state.font);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -17,7 +19,7 @@ function InputField() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex items-center mb-6 justify-between space-x-3 cursor-pointer"
+      className={`flex items-center mb-6 justify-between space-x-3 cursor-pointer font-${font}`}
     >
       <input
         type="text"
