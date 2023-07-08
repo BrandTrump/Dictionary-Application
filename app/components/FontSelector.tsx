@@ -9,7 +9,7 @@ function FontSelector() {
       <Select value={font} onValueChange={setFont}>
         <SelectItem value="serif">Serif</SelectItem>
         <SelectItem value="mono">Mono</SelectItem>
-        <SelectItem value="sans">Sans</SelectItem>
+        <SelectItem value="nunito">Nunito</SelectItem>
       </Select>
     </div>
   );
