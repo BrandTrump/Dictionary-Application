@@ -1,5 +1,6 @@
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
+import FontSelector from "./FontSelector";
 
 function Heading() {
   return (
@@ -22,22 +23,8 @@ function Heading() {
       </Link>
 
       <div className="flex divide-x-2 items-center">
-        <div className="pr-4 font-bold text-sm flex items-center space-x-4">
-          <p>Serif</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth="1.5"
-            stroke="currentColor"
-            className="w-6 h-6 text-fuchsia-600"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-            />
-          </svg>
+        <div className="pr-4 ">
+          <FontSelector />
         </div>
 
         <div className="flex items-center space-x-3 pl-4">
