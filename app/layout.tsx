@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-white dark:bg-zinc-800/50 transition duration-200 ease-in-out">
         <Provider>
           <div className="m-6 font-serif md:max-w-4xl md:flex md:flex-col md:justify-center md:mx-auto">
             <Heading />
