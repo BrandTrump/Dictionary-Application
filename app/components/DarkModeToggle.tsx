@@ -29,7 +29,13 @@ function DarkModeToggle() {
         className="sr-only peer"
         onChange={toggleTheme}
       />
-      <div className="w-9 h-5 bg-gray-500 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-fuchsia-300 dark:peer-focus:ring-fuchsia-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-fuchsia-600"></div>
+      <div
+        className={`${
+          currentTheme === "light"
+            ? "bg-gray-500 peer-focus:ring-fuchsia-300"
+            : " dark:border-gray-600 dark:bg-fuchsia-600 dark:peer-focus:ring-fuchsia-800 after:translate-x-full"
+        } w-9 h-5 peer-focus:outline-none peer-focus:ring-4 rounded-full peer  peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all`}
+      ></div>
     </label>
   );
 }
