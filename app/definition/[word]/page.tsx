@@ -1,6 +1,4 @@
-"use client";
 import fetchDefinition from "@/helpers/fetchDefinition";
-import { useFontStore } from "@/store/FontStore";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -11,7 +9,6 @@ type Props = {
 };
 
 async function DefinitionPage({ params: { word } }: Props) {
-  const font = useFontStore((state) => state.font);
   const data = await fetchDefinition(word);
 
   if (!data) {
@@ -19,7 +16,7 @@ async function DefinitionPage({ params: { word } }: Props) {
   }
 
   return (
-    <div className={`space-y-5 font-${font}`}>
+    <div className={`space-y-5`}>
       <div className="space-y-2 md:flex md:justify-between md:items-center">
         <div className="space-y-2">
           <h1 className="text-5xl capitalize">{data.word}</h1>

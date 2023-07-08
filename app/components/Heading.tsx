@@ -1,13 +1,10 @@
-"use client";
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
 import FontSelector from "./FontSelector";
-import { useFontStore } from "@/store/FontStore";
 
 function Heading() {
-  const font = useFontStore((state) => state.font);
   return (
-    <div className={`flex justify-between items-center mb-8 font-${font}`}>
+    <div className={`flex justify-between items-center mb-8`}>
       <Link href={"/"}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
