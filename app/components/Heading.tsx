@@ -8,17 +8,20 @@ function Heading() {
       <Link href={"/"}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          className="w-12 h-12 text-gray-500"
+          viewBox="0 0 34 38"
+          className="w-11 h-11 text-gray-500"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
-          />
+          <g
+            fill="none"
+            fill-rule="evenodd"
+            stroke="#838383"
+            stroke-linecap="round"
+            stroke-width="1.5"
+          >
+            <path d="M1 33V5a4 4 0 0 1 4-4h26.8A1.2 1.2 0 0 1 33 2.2v26.228M5 29h28M5 37h28" />
+            <path stroke-linejoin="round" d="M5 37a4 4 0 1 1 0-8" />
+            <path d="M11 9h12" />
+          </g>
         </svg>
       </Link>
 
