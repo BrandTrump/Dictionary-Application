@@ -27,10 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${roboto_mono.variable} ${nunito.variable} font-serif`}
-    >
+    <html lang="en" className={`${roboto_mono.variable} ${nunito.variable}`}>
       <body className="bg-white dark:bg-zinc-800/50 transition duration-200 ease-in-out">
         <Provider>
           <div className="m-6 md:max-w-4xl md:flex md:flex-col md:justify-center md:mx-auto">
