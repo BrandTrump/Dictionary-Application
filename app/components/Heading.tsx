@@ -13,7 +13,7 @@ function Heading() {
         >
           <g
             fill="none"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke="#838383"
             stroke-linecap="round"
             stroke-width="1.5"
