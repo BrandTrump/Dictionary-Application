@@ -18,7 +18,7 @@ async function DefinitionPage({ params: { word } }: Props) {
 
   return (
     <div className={`space-y-5`}>
-      <div className="space-y-2 md:flex md:justify-between md:items-center">
+      <div className="flex justify-between items-center flex-wrap">
         <div className="space-y-2">
           <h1 className="text-5xl capitalize">{data.word}</h1>
           <h2 className="text-fuchsia-600 font-bold">{data.phonetic}</h2>
