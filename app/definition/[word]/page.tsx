@@ -1,3 +1,4 @@
+import AudioButton from "@/app/components/AudioButton";
 import fetchDefinition from "@/helpers/fetchDefinition";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -22,15 +23,7 @@ async function DefinitionPage({ params: { word } }: Props) {
           <h1 className="text-5xl capitalize">{data.word}</h1>
           <h2 className="text-fuchsia-600 font-bold">{data.phonetic}</h2>
         </div>
-        {data.phonetics.map((phontic, index) => (
-          <div key={index} className="flex justify-center ">
-            {phontic.audio ? (
-              <audio controls src={phontic.audio}>
-                This browser does not support this file
-              </audio>
-            ) : null}
-          </div>
-        ))}
+        <AudioButton media={data} />
       </div>
       {data.meanings.map((meaning, index) => (
         <div key={index}>
