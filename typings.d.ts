@@ -1,6 +1,6 @@
 type Phonetic = {
   text: string;
-  audio: string;
+  audio?: string;
   sourceUrl?: string;
   license?: {
     name: string;
