@@ -27,7 +27,7 @@ function InputField() {
         placeholder="Search for any word or phrase"
         className="bg-gray-200/50 text-gray-900 text-md rounded-2xl p-2.5 xl:w-96 flex-1 pl-8  dark:placeholder:text-white dark:bg-gray-500/50 dark:text-white hover:bg-gray-300/50 truncate focus:bg-gray-300/50 dark:focus:bg-gray-400/50 dark:hover:bg-gray-400/50"
       />
-      <button type="submit" className="absolute right-0 px-6 py-2">
+      <button type="submit" className="absolute right-0 px-6 py-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
