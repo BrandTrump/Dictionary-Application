@@ -62,9 +62,9 @@ module.exports = {
             inverted: "#030712", // gray-950
           },
           background: {
-            muted: "#131A2B", // custom
+            muted: "#353536b3", // custom
             subtle: "#1f2937", // gray-800
-            DEFAULT: "#111827", // gray-900
+            DEFAULT: "#1c1c1e", // gray-900
             emphasis: "#d1d5db", // gray-300
           },
           border: {
