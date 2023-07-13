@@ -28,12 +28,12 @@ function AudioButton({ media }: Props) {
 
   return (
     <div className="flex justify-center">
-      {phonetic1.audio !== "" ||
-      phonetic2.audio !== "" ||
-      phonetic3.audio !== "" ? (
+      {phonetic1?.audio !== "" ||
+      phonetic2?.audio !== "" ||
+      phonetic3?.audio !== "" ? (
         <>
           <audio
-            src={phonetic1.audio || phonetic2.audio || phonetic3.audio}
+            src={phonetic1?.audio || phonetic2?.audio || phonetic3?.audio}
             controlsList="nodownload noplaybackrate"
             ref={audioPlayer}
           >
