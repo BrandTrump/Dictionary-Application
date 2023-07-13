@@ -1,7 +1,7 @@
 import Heading from "./components/Heading";
 import InputField from "./components/InputField";
 import Provider from "./components/Provider";
-import { Inter, Roboto_Mono, Nunito } from "next/font/google";
+import { Roboto_Mono, Nunito } from "next/font/google";
 import "./globals.css";
 
 export const metadata = {
