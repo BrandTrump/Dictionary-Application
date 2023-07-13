@@ -20,7 +20,7 @@ function AudioButton({ media }: Props) {
       setTimeout(() => {
         audioPlayer.current?.pause();
         setIsPlaying(false);
-      }, 1500);
+      }, 1700);
     } else {
       audioPlayer.current?.pause();
     }
