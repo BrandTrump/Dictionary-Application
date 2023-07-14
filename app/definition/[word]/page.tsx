@@ -17,7 +17,7 @@ async function DefinitionPage({ params: { word } }: Props) {
   }
 
   return (
-    <div className={`space-y-5`}>
+    <div className={`space-y-5 truncate`}>
       <div className="flex justify-between items-center flex-wrap">
         <div className="space-y-2">
           <h1 className="text-5xl capitalize">{data.word}</h1>
@@ -36,7 +36,7 @@ async function DefinitionPage({ params: { word } }: Props) {
           <p className="text-slate-500 mb-4">Meaning</p>
           <ul
             role="list"
-            className="marker:text-fuchsia-600 list-disc pl-10 space-y-3 "
+            className="marker:text-fuchsia-600 list-disc pl-10 space-y-3"
           >
             {meaning.definitions.map((definition, index) => (
               <li key={index}>
@@ -62,7 +62,7 @@ async function DefinitionPage({ params: { word } }: Props) {
 
       <div className="md:inline-flex md:space-x-4 max-w-10">
         <p className="text-slate-500">Source</p>
-        <div className="flex items-center space-x-2 ">
+        <div className="flex items-center space-x-2">
           <Link
             as={data.sourceUrls[0]}
             href={data.sourceUrls[0]}
